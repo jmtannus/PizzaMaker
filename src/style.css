@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;800;900&family=Raleway:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@200;300;500;800;900&display=swap');
 
-
 body {
     object-fit: contain;
     width: 100%;
     height: 975px;
 }
+
 
 #screenMaker, #screenPizza {
     border: 1px red solid;
@@ -17,8 +17,99 @@ body {
     height: 975px;  
 }
 
+.top-area{
+    background-color: #ffffffff;
+    border-radius: 8px;
+    width: 270px;
+    height: 38px;
+    margin: 0 auto;
+}
+
+.top-area > h1 {
+    text-align: center;
+    display: block;  
+}
+
+h1{ 
+    margin-block-end: 0;
+    font-family: 'Fredoka One', cursive;
+    color: #A5261D;
+    font-size: 30px;
+}
+  
+  h2, label {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    color: #ffffffff;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    margin-block-end: 0;
+}
+
 section ul {
     list-style: none;
     padding-left: 5px;
     padding-right: 15px;
-  }
+}
+
+label {
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+//imagens massa e molho
+.img-icon {
+    width: 40px;
+}
+
+#imagens {
+    width: 300px;
+    height: 410px;
+    position: relative;
+}
+
+#imagens img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 120px;
+    left: 55px;
+}
+
+
+#imagens #imageBase {
+    width: 210px;
+    height: 210px;  
+    top: 110px;
+    left: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    align-items: right;
+    margin-block-start: 12px;
+}
+  
+footer button {
+    font-size: xx-large;
+    
+    display: block;
+    /* align to right */
+    margin-left: auto;
+    margin-right: 0;
+}
+  

@@ -8,6 +8,23 @@
     <title>pIzzaMaker</title>
     <link rel="background" as="image" href="../images/backgroundMenu.png">
     <link rel="stylesheet" href="./style.css" >
+    
+    <!-- prefetch images: https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ -->
+    <link rel="prefetch" as="image" href="https://studio.code.org/v3/assets/5-IaxRvGY4VSCpbMf9JSgaFyrw9l6lBpwMY5QG1_6L4/client.png">
+
+    <link rel="prefetch" as="image" href="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-01.png?t=1670932317000">
+    <link rel="prefetch" as="image" href="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-02.png?t=1670932317000">
+    <link rel="prefetch" as="image" href="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-03.png?t=1670932317000">
+    <link rel="prefetch" as="image" href="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-04.png?t=1670932317000">
+    <link rel="prefetch" as="image" href="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-05.png?t=1670932317000">
+
+    <link rel="prefetch" as="image" href="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/veg-nonveg.png?t=1670932317000" >
+    <link rel="prefetch" as="image" href="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Non-veg.png?t=1670932317000" >
+    <link rel="prefetch" as="image" href="https://studio.code.org/v3/assets/ai36I_gY5JPKznE1ttg-CqVl0NhRRSPu1b34n7Ctx6c/Non-veg.png?t=1671892191000" >    
+
+    <link rel="stylesheet" href="./style.css" >
+    <script type="module" src="./app.js">
+    </script>
 </head>
 
 <body>
@@ -15,79 +32,81 @@
         <header>
             <div class="top-area">
                 <h1>Monte sua Pizza</h1>
-              </div>
-        </header>
-    </div>
+            </div>
+        </header>       
 
-    <div class="row">
-
-        <!--ESCOLHA DA BASE DA MASSA-->
-        <section>
-            <h2>Massa:</h2>
-            <ul>
+        <div class="row">
+            <!--ESCOLHA DA BASE DA MASSA-->
+            <section>
+                <h2>Massa:</h2>
+                <ul>
                 <li>
                     <input type="radio" id="radioBase1" name="massa" value="borda">
                     <label for="radioBase1">
-                        <img class="img-icon" src="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-01.png?t=1670932317000" alt="borda recheada">
-                      </label>
+                    <img class="img-icon" src="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-01.png?t=1670932317000" alt="borda recheada">
+                    </label>
                 </li>
                 <li>
                     <input type="radio" id="radioBase2" name="massa" value="tradicional">
                     <label for="radioBase2">
-                      <img class="img-icon" src="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-02.png?t=1670932317000" alt="massa tradicional">
+                    <img class="img-icon" src="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-02.png?t=1670932317000" alt="massa tradicional">
                     </label>
                 </li>
                 <li>
                     <input type="radio" id="radioBase3" name="massa" value="fina">
                     <label for="radioBase3">
-                      <img class="img-icon" src="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-03.png?t=1670932317000" alt="massa fina">
+                    <img class="img-icon" src="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-03.png?t=1670932317000" alt="massa fina">
                     </label>
                 </li>
-            </ul>
-        </section>
-
-        <!--ESCOLHA DO MOLHO-->
-
-        <section>
-            <h2>Molho:</h2>
-                <ul>
-                <li>
-                    <input type="radio" id="radioRedSauce" name="molho" value="vermelho">
-                    <label for="radioRedSauce">
-                        <img class="img-icon" src="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-05.png?t=1670932317000" alt="molho vermelho">
-                    </label>
-                </li>
-
-                <li>
-                <input type="radio" id="radioYellowSauce" name="molho" value="amarelo">
-                <label for="radioYellowSauce">
-                  <img class="img-icon" src="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-04.png?t=1670932317000" alt="molho vermelho">
-                </label>
-                </li>
-            </ul>
-        </section>
-
-        <!--Escolha do tipo de recheio-->>
-
-        <div class="row">
-            <section>
-              <h2>Tipo:</h2>
-              <ul>
-                <li>
-                  <input type="checkbox" id="checkboxVeg" name="recheio" value="verdura">
-                  <label for="checkboxVeg">Verdura</label>
-                </li>
-                <li>
-                  <input type="checkbox" id="checkboxNon-veg" name="recheio" value="carne">
-                  <label for="checkboxNon-veg">Carne</label>
-                </li>
-              </ul>
+                </ul>
             </section>
+
+            <!--ESCOLHA DO MOLHO-->
+
+            <section>
+                <h2>Molho:</h2>
+                <ul>
+                    <li>
+                        <input type="radio" id="radioRedSauce" name="molho" value="vermelho">
+                        <label for="radioRedSauce">
+                        <img class="img-icon" src="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-05.png?t=1670932317000" alt="molho vermelho">
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radioYellowSauce" name="molho" value="amarelo">
+                        <label for="radioYellowSauce">
+                        <img class="img-icon" src="https://studio.code.org/v3/assets/1M0wVT7H--jMKxjDJMc3ZQZGs7pYH3KRZNxtxFT3m3U/Pizzaa-04.png?t=1670932317000" alt="molho vermelho">
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+            <!--Escolha do tipo de recheio-->>
+
+            <div class="row">
+                <section>
+                <h2>Tipo:</h2>
+                <ul>
+                    <li>
+                    <input type="checkbox" id="checkboxVeg" name="recheio" value="verdura">
+                    <label for="checkboxVeg">Verdura</label>
+                    </li>
+                    <li>
+                    <input type="checkbox" id="checkboxNon-veg" name="recheio" value="carne">
+                    <label for="checkboxNon-veg">Carne</label>
+                    </li>
+                </ul>
+                </section>
+            </div>
+            <footer>
+                <button class="hidden"  name="buttonCreate" id="buttonCreate"> ➡️ </button>
+            </footer>
         </div>
-        <footer>
-            <button class="hidden"  name="buttonCreate" id="buttonCreate"> ➡️ </button>
-        </footer>
     </div>
+
+
+    <!--segunda tela -->
+    
 
     <section id="screenPizza" class="hidden">
         <div id="imagens" >
@@ -104,10 +123,5 @@
           <button id="buttonBack">⬅️</button>
         </footer>
     </section>   
-
-
-
-
-    <script type="module" src="./app.js"></script>
 </body>
 </html>
